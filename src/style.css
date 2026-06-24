@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 🛡️ تیکھے کونے مستقل ختم کر کے صرف ٹیل ونڈ کے گول کونوں کو لاگو ہونے دیں */
+* { 
+    box-sizing: border-box !important;
+}
+
+body { 
+    -webkit-tap-highlight-color: transparent; 
+    background-color: #f3f4f6;
+}
+
+/* لیف لیٹ نقشے کے بارڈرز کو بھی گول اور خوبصورت کریں */
+.leaflet-container {
+    border-radius: 0.75rem !important; /* rounded-xl */
+}

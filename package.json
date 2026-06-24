@@ -1,17 +1,8 @@
 {
-  "name": "alingo-services",
-  "private": true,
+  "name": "Home-Services",
   "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.5.0",
-    "postcss": "^8.5.15",
-    "tailwindcss": "^3.4.19",
-    "vite": "^4.4.9"
+  "dependencies": {
+    "@alingo/core-lib": "file:../Alingo-Core-Lib",
+    "@alingo/finance-core": "file:../Alingo-Finance-Core"
   }
 }
