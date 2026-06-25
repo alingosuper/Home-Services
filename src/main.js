@@ -1,6 +1,6 @@
 import './style.css';
 import { renderHeader } from './components/header.js';
-import { renderHome } from './components/home.js';
+import { renderHome } from './components/home.jsx';
 import { renderFooter } from './components/footer.js';
 import { renderSidebar } from './components/sidebar.js';
 import { renderBookings } from './components/bookings.js';
