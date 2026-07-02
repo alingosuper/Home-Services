@@ -1,4 +1,4 @@
-export const renderfooter = (activeTab) => {
+export const renderFooter = (activeTab) => {
     return `
     <footer class="fixed bottom-0 left-0 right-0 max-w-md mx-auto z-40 select-none flex flex-col">
         <div class="relative bg-[#0A192F] px-1 py-1 flex items-center justify-between shadow-2xl rounded-t-2xl h-14">
@@ -18,12 +18,6 @@ export const renderfooter = (activeTab) => {
                 ${buildFooterTab("profile", "person", "Account", activeTab)}
             </div>
         </div>
-        <div class="bg-[#F4F9F5] border-t border-gray-100 py-1.5 px-2 flex items-center justify-between gap-1 text-center shadow-inner">
-            <div class="flex flex-col items-center flex-1"><div class="flex items-center gap-0.5"><span class="material-icons text-[10px] text-green-700">verified</span><span class="text-[6px] font-black text-[#0A192F]">SAFE</span></div><span class="text-[5.5px] font-medium text-gray-500">محفوظ</span></div>
-            <div class="flex flex-col items-center flex-1"><div class="flex items-center gap-0.5"><span class="material-icons text-[10px] text-green-700">touch_app</span><span class="text-[6px] font-black text-[#0A192F]">EASY</span></div><span class="text-[5.5px] font-medium text-gray-500">آسان</span></div>
-            <div class="flex flex-col items-center flex-1"><div class="flex items-center gap-0.5"><span class="material-icons text-[10px] text-green-700">credit_card</span><span class="text-[6px] font-black text-[#0A192F]">PAYMENT</span></div><span class="text-[5.5px] font-medium text-gray-500">ادائیگی</span></div>
-            <div class="flex flex-col items-center flex-1"><div class="flex items-center gap-0.5"><span class="material-icons text-[10px] text-green-700">stars</span><span class="text-[6px] font-black text-[#0A192F]">SATISFIED</span></div><span class="text-[5.5px] font-medium text-gray-500">اطمینان</span></div>
-        </div>
     </footer>`;
 };
 
@@ -32,5 +26,3 @@ function buildFooterTab(id, icon, label, activeTab) {
     const colorClass = isActive ? "text-green-400" : "text-white/80";
     return `<button onclick="window.switchMainTab('${id}')" class="flex flex-col items-center justify-center w-11 h-11 active:scale-90 transition-transform ${colorClass}"><span class="material-icons text-base block">${icon}</span><span class="text-[7px] font-black tracking-tighter mt-0.5 whitespace-nowrap">${label}</span></button>`;
 }
-
-export default renderfooter;

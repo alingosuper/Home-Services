@@ -33,4 +33,3 @@ export const renderHeader = () => {
     </header>`;
 };
 
-export default renderHeader;
