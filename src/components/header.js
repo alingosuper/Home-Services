@@ -4,11 +4,11 @@ export const renderHeader = () => {
         <div class="flex items-center justify-between p-2.5 gap-2">
             
             <div class="flex items-center gap-1.5 shrink-0">
-                <button onclick="window.toggleTezroSidebar(true)" class="p-1 text-gray-700 active:scale-90 transition-transform">
+                <button onclick="window.toggleAlinGoSidebar(true)" class="p-1 text-gray-700 active:scale-90 transition-transform">
                     <span class="material-icons text-2xl block">menu</span>
                 </button>
                 <div class="flex flex-col items-center">
-                    <img src="logo.png" class="h-8 object-contain" alt="Tezro" onerror="this.src='https://via.placeholder.com/80x30?text=TEZRO'">
+                    <img src="logo.png" class="h-8 object-contain" alt="AlinGo" onerror="this.src='https://via.placeholder.com/80x30?text=TEZRO'">
                     <span class="text-[7px] text-green-600 font-bold -mt-0.5 uppercase tracking-tighter">All In One</span>
                 </div>
             </div>
@@ -39,3 +39,10 @@ export const renderHeader = () => {
     `;
 };
 
+export const Header = () => `
+  <div style="padding:15px; background:white; display:flex; justify-content:space-between; align-items:center;">
+    <b>TEZRO</b>
+    <div>📍 Lahore</div>
+  </div>
+  <input type="text" placeholder="Search for products..." style="width:90%; margin:10px; padding:10px; border-radius:20px; border:1px solid #ddd;">
+`;

@@ -1,7 +1,7 @@
 export const renderSidebar = () => {
     return `
-    <div id="tezro-sidebar" class="fixed inset-0 z-50 invisible transition-all duration-300 select-none">
-        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="window.toggleTezroSidebar(false)"></div>
+    <div id="AlinGo-sidebar" class="fixed inset-0 z-50 invisible transition-all duration-300 select-none">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="window.toggleAlinGoSidebar(false)"></div>
         
         <div id="sidebar-content" class="absolute top-0 right-0 bottom-0 w-64 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 border-l border-gray-200">
             
@@ -16,11 +16,11 @@ export const renderSidebar = () => {
             </div>
 
             <div class="flex-grow overflow-y-auto py-2">
-                ${buildSidebarLink("🏠", "Home Dashboard", "window.switchMainTab('home'); window.toggleTezroSidebar(false);")}
-                ${buildSidebarLink("💳", "My Wallet / Cards", "window.switchMainTab('wallet'); window.toggleTezroSidebar(false);")}
-                ${buildSidebarLink("📦", "Order History", "window.switchMainTab('bookings'); window.toggleTezroSidebar(false);")}
+                ${buildSidebarLink("🏠", "Home Dashboard", "window.switchMainTab('home'); window.toggleAlinGoSidebar(false);")}
+                ${buildSidebarLink("💳", "My Wallet / Cards", "window.switchMainTab('wallet'); window.toggleAlinGoSidebar(false);")}
+                ${buildSidebarLink("📦", "Order History", "window.switchMainTab('bookings'); window.toggleAlinGoSidebar(false);")}
                 ${buildSidebarLink("🛡️", "Security & Privacy", "alert('Security Engine Active')")}
-                ${buildSidebarLink("🛠️", "Partner Registration", "alert('Tezro Partner Portal')")}
+                ${buildSidebarLink("🛠️", "Partner Registration", "alert('AlinGo Partner Portal')")}
                 ${buildSidebarLink("📞", "Help & Support 24/7", "alert('Connecting Support...')")}
                 
                 <hr class="border-gray-100 my-2">
