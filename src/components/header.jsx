@@ -2,7 +2,6 @@ export const renderHeader = () => {
     return `
     <header class="w-full bg-white border-b border-gray-200 sticky top-0 z-40 select-none">
         <div class="flex items-center justify-between p-2.5 gap-2">
-            
             <div class="flex items-center gap-1.5 shrink-0">
                 <button onclick="window.toggleAlinGoSidebar(true)" class="p-1 text-gray-700 active:scale-90 transition-transform">
                     <span class="material-icons text-2xl block">menu</span>
@@ -12,20 +11,16 @@ export const renderHeader = () => {
                     <span class="text-[7px] text-green-600 font-bold -mt-0.5 uppercase tracking-tighter">All In One</span>
                 </div>
             </div>
-            
             <div class="flex-grow h-10 flex items-center justify-center overflow-hidden">
                 <img src="header-stiker.png" class="w-full h-full object-contain rounded-md" alt="Promo Sticker" onerror="this.style.display='none'">
             </div>
-            
             <div class="flex items-center shrink-0 pr-1">
                 <button class="relative p-1 text-gray-600 active:scale-90 transition-transform">
                     <span class="material-icons text-xl block">notifications_none</span>
                     <span class="absolute top-0 right-0 h-3 w-3 bg-red-600 text-white text-[7px] font-black flex items-center justify-center rounded-full">3</span>
                 </button>
             </div>
-
         </div>
-
         <div class="p-3 pt-1 flex items-center gap-2">
             <div class="relative flex-grow">
                 <span class="material-icons absolute left-3 top-2.5 text-gray-400 text-lg">search</span>
@@ -35,14 +30,7 @@ export const renderHeader = () => {
                 <span class="material-icons text-lg block">tune</span>
             </button>
         </div>
-    </header>
-    `;
+    </header>`;
 };
 
-export const Header = () => `
-  <div style="padding:15px; background:white; display:flex; justify-content:space-between; align-items:center;">
-    <b>TEZRO</b>
-    <div>📍 Lahore</div>
-  </div>
-  <input type="text" placeholder="Search for products..." style="width:90%; margin:10px; padding:10px; border-radius:20px; border:1px solid #ddd;">
-`;
+export default renderHeader;
