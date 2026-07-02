@@ -128,13 +128,15 @@ export function renderButtons(list) {
   `).join('');
 }
 
+
+
 export function buildPromotionCard(title, desc, img, btn) {
   return `
     <div class="bg-white p-2 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
-      <img src="/\${img}" class="w-10 h-10 object-cover mb-1">
-      <h4 class="text-[9px] font-bold text-gray-800">\${title}</h4>
-      <p class="text-[7px] text-gray-500 mb-2">\${desc}</p>
-      <button class="bg-blue-600 text-white text-[8px] px-2 py-0.5 rounded-full">\${btn}</button>
+      <img src="/${img}" class="w-10 h-10 object-cover mb-1">
+      <h4 class="text-[9px] font-bold text-gray-800">${title}</h4>
+      <p class="text-[7px] text-gray-500 mb-2">${desc}</p>
+      <button class="bg-blue-600 text-white text-[8px] px-2 py-0.5 rounded-full">${btn}</button>
     </div>
   `;
 }
@@ -142,8 +144,9 @@ export function buildPromotionCard(title, desc, img, btn) {
 export function buildImportantLink(text, icon) {
   return `
     <div class="bg-white p-3 rounded-xl border border-gray-100 flex items-center gap-2 shadow-sm">
-      <span class="material-icons text-blue-600 text-sm">\${icon}</span>
-      <span class="text-[9px] font-bold text-gray-700">\${text}</span>
+      <span class="material-icons text-blue-600 text-sm">${icon}</span>
+      <span class="text-[9px] font-bold text-gray-700">${text}</span>
     </div>
   `;
 }
+
